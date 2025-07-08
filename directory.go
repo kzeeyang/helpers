@@ -18,7 +18,7 @@ func Getcwd() (string, error) {
 }
 
 // Closedir - Close directory's handle
-func Closedir(fd int) (err error) {
+func Closedir(fd syscall.Handle) (err error) {
 
 	return syscall.Close(fd)
 }
